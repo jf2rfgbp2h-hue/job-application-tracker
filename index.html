@@ -1,0 +1,18 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Job Application Tracker | Gift Zulu</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><h1>Job Application Tracker</h1><p>Portfolio project by Gift Zulu</p></div><button id="addBtn">+ Add Application</button></header>
+<main>
+<section class="stats"><div><span id="total">0</span><small>Total</small></div><div><span id="applied">0</span><small>Applied</small></div><div><span id="interview">0</span><small>Interviews</small></div><div><span id="offer">0</span><small>Offers</small></div></section>
+<section class="toolbar"><input id="search" placeholder="Search company, role or location"><select id="filter"><option value="">All statuses</option><option>Applied</option><option>Assessment</option><option>Interview</option><option>Offer</option><option>Rejected</option><option>Withdrawn</option></select><button id="exportBtn" class="secondary">Export JSON</button><label class="secondary file">Import JSON<input id="importFile" type="file" accept="application/json"></label></section>
+<section id="empty" class="empty"><h2>No applications yet</h2><p>Add your first job application to start tracking your search.</p></section>
+<section id="cards" class="cards"></section>
+</main>
+<div id="modal" class="modal hidden"><div class="panel"><div class="panelHead"><h2 id="formTitle">Add Application</h2><button id="closeBtn" class="x">×</button></div><form id="form">
+<input type="hidden" id="id"><div class="grid">
+<label>Company *<input id="company" required maxlength="80"></label><label>Role *<input id="role" required maxlength="100"></label>
+<label>Location<input id="location" maxlength="80"></label><label>Status<select id="status"><option>Applied</option><option>Assessment</option><option>Interview</option><option>Offer</option><option>Rejected</option><option>Withdrawn</option></select></label>
+<label>Application date<input id="date" type="date"></label><label>Follow-up date<input id="followup" type="date"></label>
+<label>Salary<input id="salary" maxlength="60" placeholder="e.g. R18,000/month"></label><label>Job URL<input id="url" type="url" placeholder="https://..."></label>
+</div><label>Notes<textarea id="notes" rows="4" maxlength="800"></textarea></label><div class="actions"><button type="button" id="cancelBtn" class="secondary">Cancel</button><button type="submit">Save Application</button></div></form></div></div>
+<footer>Data is saved locally in this browser. Use Export JSON to keep a backup.</footer><script src="app.js"></script></body></html>
