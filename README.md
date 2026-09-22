@@ -1,24 +1,50 @@
-GIFT ZULU - JOB APPLICATION TRACKER
+# Job Application Tracker
 
-Windows 7 friendly portfolio version. No installation required.
+A simple and responsive web application for tracking job applications throughout the recruitment process.
 
-HOW TO RUN
-1. Open the extracted folder.
-2. Double-click index.html.
-3. It opens in Chrome.
+🔗 **Live Demo:** https://jf2rfgbp2h-hue.github.io/job-application-tracker/
 
-FEATURES
-- Dashboard totals
-- Add, edit, delete applications
-- Search and status filtering
-- Follow-up dates, salary, location, job URL and notes
+## Features
+
+- Add, edit and delete job applications
+- Track application status
+- Dashboard showing total applications, interviews and offers
+- Search applications by company or role
+- Filter applications by status
+- Record application and follow-up dates
+- Store salary, location, job URL and notes
+- Export application data as JSON
+- Import previously exported JSON data
+- Browser-based data persistence using localStorage
 - Form validation
-- Browser localStorage persistence
-- Export/import JSON backup
-- Responsive UI
 
-TECHNOLOGY
-HTML5, CSS3, JavaScript (ES5-compatible syntax where practical), Web Storage API / JSON.
+## Technologies Used
 
-PORTFOLIO NOTE
-This Windows 7 build is a frontend/local-data version. Do not describe it as a SQL Server or ASP.NET backend project. The architecture can later be upgraded to a REST API + SQL database on a supported development machine.
+- HTML5
+- CSS3
+- JavaScript
+- Web Storage API (localStorage)
+- GitHub Pages
+
+## How It Works
+
+Users can add job applications and update their progress as they move through the recruitment process. Application information is stored locally in the user's browser using localStorage, so no account or backend server is required.
+
+## Running the Project Locally
+
+1. Download or clone this repository.
+2. Open the project folder.
+3. Double-click `index.html`.
+4. The application will open in your web browser.
+
+No additional installation is required.
+
+## Data Privacy
+
+Application data is stored locally in the user's browser and is not uploaded to a server.
+
+## Author
+
+**Gift Zulu**
+
+Junior Software Developer
